@@ -5,8 +5,11 @@ import Projects from './sections/Projects';
 
 function App() {
   return (
-      <Header></Header>,
-      <Home/>      
+    <>
+      <Header></Header>
+      <Home/>
+      <Projects></Projects>
+    </>
   );
 }
 

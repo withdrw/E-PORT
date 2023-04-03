@@ -10,11 +10,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+  0deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(360deg 17% 59%) 33%,
+  hsl(0deg 86% 94%) 67%,
+  hsl(0deg 0% 100%) 100%
+);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components{
+ 
+}
+
 
 
