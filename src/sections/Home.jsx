@@ -15,7 +15,7 @@ function Home() {
         Studying to become a frontend web developer, with lots of passion and motivation to learn more. Some of the languages I'm familiar with are HTML , CSS , JavaScript and currently in the process of learning React .
         </p>
         </div>
-        <img className="pb-40 w-[30%] z-10 " src="https://o.remove.bg/downloads/e15add49-ed42-46a6-a5ad-49571b73a00d/computer-science-desktop-wallpaper-programmer-clip-art-computer-removebg-preview.png" alt="" />
+        <img className="pb-40 w-[30%] z-10 " src="" alt="" />
       </div> 
       <div>
 
