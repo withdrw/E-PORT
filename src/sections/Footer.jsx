@@ -1,6 +1,16 @@
 import React from 'react'
 
 function Footer() {
+
+
+
+
+
+
+
+
+
+  
   return (
     <div className= ' flex text-[white]  items-center justify-center text-center w-[100%] bg-black mt-10 '>
         <footer className='text-[16px] w-[100%]'>

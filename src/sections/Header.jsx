@@ -1,4 +1,6 @@
-function Header() {
+function Header({setModal,modal}) {
+
+    console.log(modal)
   return (
     <div>
     <nav className='flex bg-[#ffffff00] text-[black] h-20 max-w-20 justify-between'>
@@ -11,7 +13,7 @@ function Header() {
             <a  href="/" className='mx-5 h-10 ml-16 cursor-pointer '>Home</a>
             <a  href="/" className='mx-5 h-10 ml-16 cursor-pointer '>About </a>
             <a  href="/" className='mx-5 h-10 ml-16 cursor-pointer '>Projects </a>
-            <a  href="/" className='mx-5 h-10 ml-16 cursor-pointer '>Contact </a>
+            <button onClick={() => {setModal(!modal)} }  href="/" className='mx-5 h-10 ml-16 mb-3 cursor-pointer '>Contact </button>
             
         </div>
     </nav>

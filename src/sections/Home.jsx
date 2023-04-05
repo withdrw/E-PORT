@@ -1,10 +1,11 @@
-import Header from "./Header"
-import Projects from "./Projects"
 
-function Home() {
+
+function Home({setModal,modal}) {
+
+
   return (
 
-    <div className="h-screen">
+    <div className="h-screen relative">
       <div className="h-[calc(100%-80px)] flex items-center justify-center" >
 
         <div className="text-start max-w-[800px] w-[100%] mb-60 ">
@@ -17,9 +18,12 @@ function Home() {
         </div>
         <img className="pb-40 w-[30%] z-10 " src="" alt="" />
       </div> 
-      <div>
+      
+      
+      {modal &&  <div className=" top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute bg-black w-[50%] h-[45%] "> 
+     DIV
+      </div>}
 
-      </div>
     </div>
   ) 
 }

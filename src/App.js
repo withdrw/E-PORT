@@ -7,17 +7,23 @@ import { useState } from 'react';
 
 function App() {
 
-  const [setModal, showModal] = useState('false')
-  
 
+  const [modal, setModal] = useState(false)
+
+
+
+
+  
+  
+  
 
 
 
 
   return (
     <>
-      <Header></Header>
-      <Home/>
+      <Header modal={modal} setModal={setModal} ></Header>
+      <Home modal={modal} setModal={setModal} />
       <Projects></Projects>
       <Footer/>
     </>
