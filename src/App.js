@@ -12,14 +12,6 @@ function App() {
 
 
 
-
-  
-  
-  
-
-
-
-
   return (
     <>
       <Header modal={modal} setModal={setModal} ></Header>
