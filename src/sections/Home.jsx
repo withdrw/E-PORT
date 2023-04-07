@@ -20,12 +20,18 @@ function Home({setModal,modal}) {
       </div> 
       
       
-      {modal &&  <div className=" shadow-xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute bg-[blue]/50 w-[50%] h-[55%] rounded-xl "> 
-      <h1 className="bg-white w-[50%] h-[100%] ml-0 font-semibold text-[20px] text-center ">
+      {modal &&  <div className=" shadow-xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute bg-[blue]/50 w-[50%] h-[55%] rounded-xl text-white "> 
+      <div className="bg-[black] w-[50%] h-[100%] ml-0">
+
+      <h1 className=" font-semibold text-[20px] ml-6 pt-14 ">
         About Me 
       </h1>
-     
+      <p className="w-[60%] leading-8  ml-6 mt-10">
+      I'm a 22 year-old Pakistani frontend software engineer with a strong passion for developing websites with great user experiences.
+I currently just work on basic websites that are easy to walkthrough, also learning from other frontend engineers on how to solve harder problems and get a better understanding.
+      </p>
 
+      </div>
       </div>}
       <div onClick={() => {setModal(false)}} className={` ${modal && "translate-y-[-250%] opacity-100" } absolute left-[50%] bottom-[10%] transition-all opacity-0 border-2 cursor-pointer rounded-full px-2 duration-1000ms ease-in-out border-black   `}>
 X
