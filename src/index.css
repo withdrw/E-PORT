@@ -10,13 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(
-  0deg,
-  hsl(0deg 0% 0%) 0%,
-  hsl(360deg 17% 59%) 33%,
-  hsl(0deg 86% 94%) 67%,
-  hsl(0deg 0% 100%) 100%
-);
+
+
+
 }
 
 code {
@@ -25,7 +21,32 @@ code {
 }
 
 @layer components{
- 
+            .bg {
+              background-image: linear-gradient(
+  0deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(360deg 17% 59%) 33%,
+  hsl(0deg 86% 94%) 67%,
+  hsl(0deg 0% 100%) 100%
+);
+            }
+
+            .showmodal{
+              animation: newM;
+              animation-duration: 300ms;
+              animation-fill-mode: forwards;
+              transition: ease-in-out;
+
+            }
+@keyframes newM {
+          0% {}
+  100%{top:50%; 
+    z-index: 20;
+  }
+  
+        }
+
+
 }
 
 

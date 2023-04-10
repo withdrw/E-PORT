@@ -5,6 +5,7 @@ import Projects from './sections/Projects';
 import Footer from './sections/Footer';
 import { useState } from 'react';
 
+
 function App() {
 
 
@@ -13,12 +14,13 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg'>
+      
       <Header modal={modal} setModal={setModal} ></Header>
       <Home modal={modal} setModal={setModal} />
       <Projects></Projects>
       <Footer/>
-    </>
+    </div>
   );
 }
 
