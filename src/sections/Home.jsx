@@ -21,17 +21,45 @@ function Home({setModal,modal}) {
       
       <div onClick={() => {setModal(false)}}  className={`top-0 h-screen  absolute w-[100%]  backdrop-blur	   ${modal?  "z-10": "-z-10" }`  }>
       </div>
-       <div className={`   -z-20 shadow-xl top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute bg-[blue]/50 w-[50%] h-[55%] rounded-xl text-white   ${modal &&  "showmodal block" }` }> 
+       
+       
+       
+       
+       <div className={`   -z-20 shadow-xl top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute bg-[white] w-[50%] rounded-xl text-white   ${modal &&  "showmodal block" }` }> 
+      
+      <div className="flex h-[100%] ">
+
+      
       <div className="bg-[black] w-[50%] h-[100%] ml-0">
 
-      <h1 className=" font-semibold text-[20px] ml-6 pt-14 ">
+      <h1 className=" font-semibold text-[20px] ml-6 pt-14  ">
         About Me 
       </h1>
-      <p className="w-[60%] leading-8  ml-6 mt-10">
+      <p className="w-[60%] leading-8  ml-6 mt-10 mb-10">
       I'm a 22 year-old Pakistani frontend software engineer with a strong passion for developing websites with great user experiences.
 I currently just work on basic websites that are easy to walkthrough, also learning from other frontend engineers on how to solve harder problems and get a better understanding.
       </p>
 
+      
+
+      </div>
+      <div className="w-[50%] bg-white h-[100%] flex flex-col m-4 items-center ">
+    <form className="flex flex-col text-black max-w-[80%] w-[100%] mt-7" action="">
+      <label className="text-black" htmlFor="">
+        Name: 
+      </label>
+      <input className="border mt-4  mb-4" required type="text" placeholder="Name" />
+
+      <label  htmlFor="">
+        Email:
+      </label>
+      <input className="border mt-4  mb-4" required type="text" placeholder="Email" />
+      <label htmlFor="">Message:</label>
+
+      <textarea placeholder="Type in your message" className="border" required name="" id="" cols="20" rows="5"></textarea>
+      <button className=" mt-10 bg-[red] max-w-[30%]"> Send it</button>
+    </form> 
+      </div>
       </div>
       </div>
       <div onClick={() => {setModal(false)}} className={` ${modal && "translate-y-[-250%] opacity-100 z-20" } absolute left-[50%] bottom-[10%] transition-all opacity-0 border-2 cursor-pointer rounded-full px-2 duration-1000ms ease-in-out border-black   `}>
