@@ -1,6 +1,22 @@
+import emailjs from '@emailjs/browser'
+import { form } from 'react';
+
+
 
 
 function Home({setModal,modal}) {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_oqv9az3', 'template_1nwxnoz', e.target, '9I-PqnWEOw6bFzT02')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
 
 
   return (
@@ -44,19 +60,19 @@ I currently just work on basic websites that are easy to walkthrough, also learn
 
       </div>
       <div className="w-[50%] bg-white h-[100%] flex flex-col m-4 items-center ">
-    <form className="flex flex-col text-black max-w-[80%] w-[100%] mt-7" action="">
+    <form onSubmit={sendEmail} className="flex flex-col text-black max-w-[80%] w-[100%] mt-7" action="">
       <label className="text-black" htmlFor="">
         Name: 
       </label>
-      <input className="border mt-4  mb-4" required type="text" placeholder="Name" />
+      <input name='name'  className="border mt-4  mb-4" required type="text" placeholder="Name" />
 
       <label  htmlFor="">
         Email:
       </label>
-      <input className="border mt-4  mb-4" required type="text" placeholder="Email" />
+      <input name='email' className="border mt-4  mb-4" required type="text" placeholder="Email" />
       <label htmlFor="">Message:</label>
 
-      <textarea placeholder="Type in your message" className="border" required name="" id="" cols="20" rows="5"></textarea>
+      <textarea name='message' placeholder="Type in your message" className="border" required name="" id="" cols="20" rows="5"></textarea>
       <button className=" mt-10 bg-[red] max-w-[30%]"> Send it</button>
     </form> 
       </div>
