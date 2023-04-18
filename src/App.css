@@ -28,12 +28,33 @@
   color: #61dafb;
 }
 
+.img__para{
+  opacity: 0;
 
-/* .imgone {
+  transform: translateY(500%);
+
+}
+
+.img__one{
+  width: 80%;
+  align-items: center;
+}
+
+
+.data__para:hover
+.img__para{
   opacity: 1;
-    transform: translateY(-50%);
-} */
+  transition: all 300ms ease;
+  z-index: 100;
+  transform: translateY(0%);
 
+}
+
+.data__para:hover
+.img__two{
+  transition: all 300ms ease;
+  filter: blur(5px);
+}
 
 @keyframes App-logo-spin {
   from {
