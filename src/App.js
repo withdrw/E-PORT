@@ -9,18 +9,19 @@ import { useRef, useState } from 'react';
 function App() {
 
 
+
   const [modal, setModal] = useState(false)
 
   const sendEmail = useRef()
 
-
+const [isHover, setIsHovering] = useState(false)
 
   return (
     <div className='bg'>
       
       <Header modal={modal} setModal={setModal}  ></Header>
-      <Home modal={modal} setModal={setModal} sendEmail={sendEmail}  />
-      <Projects></Projects>
+      <Home modal={modal} setModal={setModal} sendEmail={sendEmail}    />
+      <Projects isHover={isHover} setIsHovering={setIsHovering} />
       <Footer/>
     </div>
   );
